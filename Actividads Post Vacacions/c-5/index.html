@@ -1,0 +1,35 @@
+<html >
+
+    <head>
+        <title>Hola</title>
+        
+    
+    
+    </head>
+    
+    
+    
+    
+    
+    <body>
+       Edad <input type="text" id="texto1" onmouseover="clic();" onkeyup="clic()">
+       
+        <a href="#">MOver</a>
+
+        <script>
+            console.log("lo sigiente.");
+            function clic(){
+
+                let textico = document.getElementById("texto1");
+                if(parseInt(textico.value)>=120){
+                    window.alert("La edad superó el límite.");
+                    textico.value = 0;
+                }
+                 console.log( );   
+           
+           
+           
+                }
+        </script>
+    </body>
+</html>
