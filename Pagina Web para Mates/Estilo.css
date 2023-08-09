@@ -1,0 +1,223 @@
+body {
+  background-image: url(Imagen/one\ pice.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+.Contenedor{
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+body::after{
+  content: '';
+  background: #333;
+  position: absolute;
+  width: 100%;
+  height: 110vb;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.lol{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.lol1{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.lol2{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  
+}
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #db3434;
+  margin-left: 20px;
+}
+.lol3{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  left: 220px;
+  top: -162px;
+}
+.Rectangulo {
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+  margin-left: 170px;
+  margin-top: -162px;
+}
+.lol4{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  left: 440px;
+  top: -162px;
+}
+.Triangulo {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid hwb(175 0% 0%); 
+  margin-left: 460px;
+  margin-top: -162px;
+}
+.lol5{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  left: 30px;
+  top: 30px;
+}
+.Trapecio {
+  width: 120px;
+  height: 0;
+  border-bottom: 100px solid #85db34;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin-top: 40px;
+}
+.lol6{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  left: 260px;
+  top: -170px;
+
+}
+.Circulo {
+  width: 100px;
+  height: 100px;
+  background-color: #8a34db;
+  border-radius: 50%;
+  margin-left: 266px;
+  margin-top: -159px;
+}
+.paralelogramo {
+  width: 150px;
+  height: 100px;
+  background-color: #db34b7;
+  position: relative;
+  transform: skewX(-20deg);
+  margin-left: 460px;
+  margin-top: -154px;
+ 
+}
+.lol7{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  left: 460px;
+  top: -170px;
+
+}
+.Link{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: 120px;
+  top: -393px;
+}
+.Link2{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: 355px;
+  top: -462px;
+}
+.Link3{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: 562px;
+  top: -531px;
+}
+.Link4{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: 152px;
+  top: -411px;
+}
+.Link5{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: 362px;
+  top: -481px;
+}
+.Link6{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: 240px;
+  top: 5px;
+}
+
+
