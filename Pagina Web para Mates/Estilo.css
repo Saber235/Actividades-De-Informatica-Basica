@@ -4,20 +4,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+ 
   
 }
 .Contenedor{
   width: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  
 }
 body::after{
   content: '';
   background: #333;
   position: absolute;
   width: 100%;
-  height: 110vb;
+  height: 100vb;
   left: 0;
   top: 0;
   opacity: 0.5;
@@ -219,5 +219,37 @@ body::after{
   left: 240px;
   top: 5px;
 }
+/*/ Estilo de html las figuras geometricas/*/
+.container {
+  font-family: 'Edu SA Beginner', cursive;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e8e8f0;
+  border-radius: 5px;
 
+  align-items: center;
+  color: #fff;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+p {
+  margin-top: 20px;
+  font-weight: bold;
+}
 
