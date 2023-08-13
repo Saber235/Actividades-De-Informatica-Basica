@@ -1,0 +1,45 @@
+<html >
+    
+    <head>
+    
+        <title>Circulo</title>
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+    <body>
+        <a href="Index.html">
+            <div id="Bandera_Logo">
+                <br><img src="Imagen/boton.jpg" width="60" >
+           </div>
+        </a>
+        <div class="container">
+            <div class="calculator">
+              <h2>Calculadora del Area y el  Perimetro Del Circulo.</h2>
+              <label for="radius">Radio:</label>
+              <input type="number" id="radius" step="any" placeholder="Radio" />
+              <button onclick="calculate()">Calcular</button>
+              <p>Área: <span id="areaResult">-</span> metros cuadrados</p>
+              <p>Perímetro: <span id="perimeterResult">-</span> metros</p>
+            </div>
+        </div>
+            <script >
+                function calculate() {
+                const radius = parseFloat(document.getElementById('radius').value);
+                
+                if (isNaN(radius)) {
+                alert("Por favor, ingresa un valor válido para el radio.");
+                return;
+                }
+                
+                const area = (Math.PI * radius * radius).toFixed(2);
+                const perimeter = (2 * Math.PI * radius).toFixed(2);
+                
+                document.getElementById('areaResult').textContent = area;
+                document.getElementById('perimeterResult').textContent = perimeter;
+                }
+            </script>
+    
+    
+    
+    
+    </body>
+</html>

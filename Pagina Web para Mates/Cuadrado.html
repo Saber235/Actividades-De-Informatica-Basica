@@ -4,33 +4,46 @@
         <link rel="stylesheet" href="Estilo.css">
     </head>
     <body>
-
-        <div class="container">
-            <h1>Calculadora de área y perímetro del cuadrado</h1>
-            <label for="side">Lado del cuadrado:</label>
-            <input type="number" id="side" placeholder="Ingrese el lado del cuadrado">
-            <button onclick="calcularAreaYPerimetro()">Calcular</button>
-            <p id="resultado"></p>
-          </div>
         
-        <script>
-            function calcularAreaYPerimetro() {
-            const side = parseFloat(document.getElementById("side").value);
-            if (isNaN(side) || side <= 0) {
-            alert("Por favor, ingrese un número válido para el lado del cuadrado.");
-            return;
-            }
+             <a href="Index.html">
+                <div id="Bandera_Logo">
+                    <br><img src="Imagen/boton.jpg" width="60" >
+               </div>
+            </a>
+            <div class="container">
+                <div class="calculator">
+                  <h2>Calculadora del Area y el  Perimetro Del Cuadrado.</h2>
+                  <label for="side">Base:</label>
+                  <input type="number" id="side" step="any" placeholder="Base" />
+                  <label for="height">Altura:</label>
+                  <input type="number" id="height" step="any" placeholder="Altura" />
+                  <button onclick="calculate()">Calcular</button>
+                  <p>Área: <span id="areaResult">-</span> metros cuadrados</p>
+                  <p>Perímetro: <span id="perimeterResult">-</span> metros</p>
+                </div>
+              </div>
+        
+            <script>
+                function calculate() {
+                const side = parseFloat(document.getElementById('side').value);
+    
+                if (isNaN(side)) {
+                alert("Por favor, ingresa un valor válido para el lado.");
+                return;
+                }
+    
+                const area = (side * side);
+                const perimeter = (4 * side);
+    
+                document.getElementById('areaResult').textContent = area;
+                document.getElementById('perimeterResult').textContent = perimeter;
+                }
+             </script>
+        
 
-            const area = side * side;
-            const perimeter = 4 * side;
-
-            const resultadoElement = document.getElementById("resultado");
-            resultadoElement.innerHTML = `El área del cuadrado es: ${area} unidades cuadradas <br> El perímetro del cuadrado es: ${perimeter} unidades`;
-            }
 
 
-
-        </script>
+        
     
     </body>
 </html>

@@ -1,0 +1,70 @@
+<html >
+    
+    <head>
+    
+        <title>convertidorUnidades</title>
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+    <body>
+        <a href="Index.html">
+            <div id="Bandera_Logo">
+                <br><img src="Imagen/boton.jpg" width="60" >
+           </div>
+        </a>
+        <div class="container">
+            <div class="converter">
+              <h2>Convertidor de Unidades de Longitud</h2>
+              <label for="inputValue">Valor:</label>
+              <input type="number" id="inputValue" step="any" placeholder="Valor" />
+              <label for="fromUnit">Desde:</label>
+              <select id="fromUnit">
+                <option value="m">Metros</option>
+                <option value="cm">Centímetros</option>
+                <option value="mm">Milímetros</option>
+              </select>
+              <label for="toUnit">A:</label>
+              <select id="toUnit">
+                <option value="m">Metros</option>
+                <option value="cm">Centímetros</option>
+                <option value="mm">Milímetros</option>
+              </select>
+              <button onclick="convert()">Convertir</button>
+                <p>Resultado: <span id="result">-</span></p>
+            </div>
+        </div>
+            <script >
+                 function convert() {
+                const inputValue = parseFloat(document.getElementById('inputValue').value);
+                const fromUnit = document.getElementById('fromUnit').value;
+                const toUnit = document.getElementById('toUnit').value;
+
+                if (isNaN(inputValue)) {
+                alert("Por favor, ingresa un valor válido.");
+                return;
+                }
+                let result = 0;
+                if (fromUnit === "m" && toUnit === "cm") {
+                result = inputValue * 100;
+                } else if (fromUnit === "m" && toUnit === "mm") {
+                result = inputValue * 1000;
+                } else if (fromUnit === "cm" && toUnit === "m") {
+                result = inputValue / 100;
+                } else if (fromUnit === "cm" && toUnit === "mm") {
+                result = inputValue * 10;
+                } else if (fromUnit === "mm" && toUnit === "m") {
+                result = inputValue / 1000;
+                } else if (fromUnit === "mm" && toUnit === "cm") {
+                result = inputValue / 10;
+                } else {
+                result = inputValue;
+                }
+
+                document.getElementById('result').textContent = result;
+               }
+            </script>
+    
+    
+    
+    
+    </body>
+</html>

@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
- 
+
   
 }
 .Contenedor{
@@ -32,6 +32,17 @@ body {
   color: #fff;
   position: relative;
   z-index: 1;
+}
+.lol9{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 220px;
+  left: -360px;
 }
 .lol2{
   font-family: 'Edu SA Beginner', cursive;
@@ -210,6 +221,17 @@ body {
   left: 240px;
   top: 5px;
 }
+.Link0{
+  font-family: 'Edu SA Beginner', cursive;
+  display: flex;
+  width: 100%;
+  color: #ee1f1f;
+  position: relative;
+  z-index: 2;
+  left: -10px;
+  margin-top: 220px;
+}
+
 /*/ Estilo de html las figuras geometricas/*/
 .container {
   font-family: 'Edu SA Beginner', cursive;
@@ -244,4 +266,7 @@ p {
   margin-top: 20px;
   font-weight: bold;
 }
-
+#Bandera_Logo{
+  
+  margin-left: 250px;
+}

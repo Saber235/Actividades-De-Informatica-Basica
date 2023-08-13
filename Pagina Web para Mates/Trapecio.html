@@ -1,0 +1,58 @@
+<html >
+    
+    <head>
+    
+        <title>Trapecio</title>
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+    <body>
+        <a href="Index.html">
+            <div id="Bandera_Logo">
+                <br><img src="Imagen/boton.jpg" width="60" >
+           </div>
+        </a>
+            <div class="container">
+                <div class="calculator">
+                    <h2>Calculadora del Area y el  Perimetro Del Trapecio.</h2>
+                    <label for="base1">Base mayor:</label>
+                    <input type="number" id="base1" step="any" placeholder="Base mayor" />
+                    <label for="base2">Base menor:</label>
+                    <input type="number" id="base2" step="any" placeholder="Base menor" />
+                    <label for="height">Altura:</label>
+                    <input type="number" id="height" step="any" placeholder="Altura" />
+                    <label for="side1">Lado 1:</label>
+                    <input type="number" id="side1" step="any" placeholder="Lado 1" />
+                    <label for="side2">Lado 2:</label>
+                    <input type="number" id="side2" step="any" placeholder="Lado 2" />
+                    <button onclick="calculate()">Calcular</button>
+                    <p>Área: <span id="areaResult">-</span> metros cuadrados</p>
+                    <p>Perímetro: <span id="perimeterResult">-</span> metros</p>
+                </div>
+            </div>
+         
+            <script >
+                 function calculate() {
+                const base1 = parseFloat(document.getElementById('base1').value);
+                const base2 = parseFloat(document.getElementById('base2').value);
+                const height = parseFloat(document.getElementById('height').value);
+                const side1 = parseFloat(document.getElementById('side1').value);
+                const side2 = parseFloat(document.getElementById('side2').value);
+                
+                if (isNaN(base1) || isNaN(base2) || isNaN(height) || isNaN(side1) || isNaN(side2)) {
+                alert("Por favor, ingresa valores válidos para todas las medidas.");
+                return;
+                }
+                
+                const area = (((base1 + base2) * height) / 2);
+                const perimeter = (base1 + base2 + side1 + side2);
+                
+                document.getElementById('areaResult').textContent = area;
+                document.getElementById('perimeterResult').textContent = perimeter;
+                }
+            </script>
+    
+    
+    
+    
+    </body>
+</html>
