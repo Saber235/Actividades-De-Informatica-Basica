@@ -44,11 +44,11 @@ select * from tb_posibles_padres,tb_posibles_hijos where tb_posibles_padres.dni_
 create table tb_posibles_nietos(
 	dni_nt varchar(15)   not null,
     dni_hj  varchar(15)   not null,
+    dni_Gn  varchar(15)   not null,
 	nombres varchar(50)  not null,
 	apellidos varchar(50) not null,
 	fecha_nac date      not null,
 	edad  int              null, 
-    dni_Gn  varchar(15)   not null,
 	 primary key(dni_nt)
 );
 DROP table tb_posibles_nietos;
@@ -75,8 +75,8 @@ create table tb_posibles_Profeciones(
 	dni_Pr varchar(15)   not null,
     dni_hj  varchar(15)   not null,
     nombre_Pro varchar(50)  not null,
-	Fecha_in int                 null,
-	Fecha_Fin int                 null,
+	Fecha_in date      not null,
+	Fecha_Fin date      not null,
 	primary key(dni_Pr)
 );
 drop table tb_posibles_Profeciones;
@@ -94,5 +94,5 @@ Femenino  varchar(50)   not null,
 drop table tb_posibles_Generos;
  describe  tb_posibles_Generos;
  select * from  tb_posibles_Generos;
- select * from tb_posibles_Generos,tb_posibles_hijos where tb_posibles_Generos.dni_Gn = tb_posibles_hijos.dni_Gn;
+ select * from tb_posibles_Generos,tb_posibles_nietos where tb_posibles_Generos.dni_Gn = tb_posibles_nietos.dni_Gn;
  
